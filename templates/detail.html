@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>首页</title>
+    <!-- Bootstrap Styles-->
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link rel="stylesheet" href="/static/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Morris Chart Styles-->
+    <link href="/static/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet"/>
+    <!-- Custom Styles-->
+    <link href="/static/assets/css/custom-styles.css" rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default top-navbar" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Memory</a>
+        </div>
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-messages">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Doe</strong>
+                                <span class="pull-right text-muted">
+                                        <em>Today</em>
+                                </span>
+                            </div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                            </div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since an kwilnw...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <strong>John Smith</strong>
+                                <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                            </div>
+                            <div>Lorem Ipsum has been the industry's standard dummy text ever since the...</div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>Read All Messages</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-messages -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-tasks">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 1</strong>
+                                    <span class="pull-right text-muted">60% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span class="sr-only">60% Complete (success)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 2</strong>
+                                    <span class="pull-right text-muted">28% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="28"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 28%">
+                                        <span class="sr-only">28% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 3</strong>
+                                    <span class="pull-right text-muted">60% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                        <span class="sr-only">60% Complete (warning)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <p>
+                                    <strong>Task 4</strong>
+                                    <span class="pull-right text-muted">85% Complete</span>
+                                </p>
+                                <div class="progress progress-striped active">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="85"
+                                         aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                        <span class="sr-only">85% Complete (danger)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>See All Tasks</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-tasks -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-alerts">
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                <span class="pull-right text-muted small">4 min</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="pull-right text-muted small">12 min</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                <span class="pull-right text-muted small">4 min</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                <span class="pull-right text-muted small">4 min</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#">
+                            <div>
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="pull-right text-muted small">4 min</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a class="text-center" href="#">
+                            <strong>See All Alerts</strong>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-alerts -->
+            </li>
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-gear fa-fw"></i> {{ username }} </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="/out"><i class="fa fa-sign-out fa-fw"></i> 退出登录</a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+    </nav>
+    <!--/. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <a href="/index"><i class="fa fa-dashboard"></i> 首页 </a>
+                </li>
+                <li>
+                    <a href="/ui-elements"><i class="fa fa-desktop"></i> 记录列表 </a>
+                </li>
+                <li>
+                    <a href="/form"><i class="fa fa-edit"></i> 添加记录 </a>
+                </li>
+                <li>
+                    <a href="/bar"><i class="fa fa-sitemap"></i>柱状统计图</a>
+                </li>
+                <li>
+                    <a href="/pie"><i class="fa fa-sitemap"></i>饼状统计图</a>
+                </li>
+                <li>
+                    <a href="/contact_us"><i class="fa fa-fw fa-file"></i> 关于我们 </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div id="page-inner">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page-header">
+                        记录 <small>Memory of your Life</small>
+                    </h1>
+                </div>
+            </div>
+            <!-- /. ROW  -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="panel panel-primary no-boder">
+                        <div class="panel-heading">
+                            <span>记录详情</span>
+                        </div>
+                        <div class="panel-body">
+                            {{ record.text }}
+                        </div>
+                        {% if record.image == '/static/' %}
+
+                        {% else %}
+                            <div style="height: 260px; margin: 0 auto">
+                                <img style="height: auto;width: auto;max-height: 100%;max-width: 100%"
+                                     src={{ record.image }}>
+                            </div>
+                        {% endif %}
+                        <div class="panel-footer" style="text-align: right">&nbsp;&nbsp;&nbsp;
+{#                                                        <strong><span id="test1">test1</span> </strong>#}
+{##}
+{#                                                        <strong><span id="test2">test2</span> </strong>#}
+{#                                                        <strong><span id="test3">test3</span> </strong>#}
+{#                                                        <strong><span id="test">test</span> </strong>#}
+                            {% if userl.is_like %}
+                                <button id="zan" onclick=" myclick()" type="button">取消赞</button>
+                            {% else %}
+                                <button id="zan" onclick=" myclick()" type="button">赞</button>
+                            {% endif %}
+
+                            &nbsp;
+                            <strong><span id="zanco">{{ record.likeco }}</span></strong>
+                            <script>
+                                localStorage.clear();
+                                likecomid = {{ record.likeco }};
+                                is_likemid = {{ userl.is_like }};
+                                {#document.getElementById("test1").innerHTML = "hhhhhhhh";#}
+                                {#document.getElementById("test2").innerHTML = likecomid;#}
+                                {#document.getElementById("test3").innerHTML = is_likemid;#}
+
+                                function myclick() {
+                                    if (typeof (Storage) != "undefined") {
+                                        if (localStorage.clickcount) {
+                                            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                                        } else {
+                                            localStorage.clickcount = 1;
+                                        }
+
+                                        if (is_likemid) {//初始状态：已点赞///////////////////
+                                            if (localStorage.clickcount % 2) {
+                                                document.getElementById("zan").innerHTML = "取消赞";
+                                                cou = likecomid + 1;///////////////
+                                                document.getElementById("zanco").innerHTML = cou;
+                                                //返回到前端is_like为赞
+                                                is_like1 = 1;
+                                                //返回Likeco数据
+                                                likeco1 = cou;
+                                            } else {
+                                                document.getElementById("zan").innerHTML = "赞";
+                                                cou = likecomid - 1;//////////////////////
+                                                document.getElementById("zanco").innerHTML = cou;
+                                                //返回到前端is_like为不喜欢
+                                                is_like1 = 0;
+                                                //返回Likeco数据
+                                                likeco1 = cou;
+                                            }
+
+                                        } else {//初始状态：未点赞
+                                            if (localStorage.clickcount % 2) {
+                                                document.getElementById("zan").innerHTML = "取消赞";
+                                                cou = likecomid + 1;//////////////////
+                                                document.getElementById("zanco").innerHTML = cou;
+                                                //返回到前端is_like为赞
+                                                is_like1 = 1;
+                                                //返回Likeco数据
+                                                likeco1 = cou;
+                                                {#document.getElementById("test").innerHTML = "lllll"#}
+
+                                            } else {
+                                                document.getElementById("zan").innerHTML = "赞";
+                                                cou = likecomid - 1;////////////////
+                                                document.getElementById("zanco").innerHTML = cou;
+                                                //返回到前端is_like为不喜欢
+                                                is_like1 = 0;
+                                                //返回Likeco数据
+                                                likeco1 = cou;
+                                            }
+                                        }
+
+
+                                        $.ajax({
+                                            type: "POST",
+                                            url: "/zan",
+                                            cache: false,
+                                            data: JSON.stringify({
+                                                recordid:{{record.id}},
+                                                is_like: is_like1,
+                                                likeco: likeco1////////////////
+                                            }),
+                                            contentType: 'application/json;charset=UTF-8',
+                                            dataType: 'json',
+                                            async: true,
+                                            success: function (data) {
+                                                document.getElementById("zanco").innerHTML = data.likeco2;
+
+                                                //后端传来的值更改前端的值
+                                                is_likemid = data.likeco2
+                                                likecomid = data.likeco2
+
+                                                if (data.is_like2) {
+                                                    document.getElementById("zan").innerHTML = "取消赞";
+                                                } else {
+                                                    document.getElementById("zan").innerHTML = "赞";
+                                                }
+
+                                            }
+                                        });
+                                    } else {
+                                        document.getElementById("zanco").innerHTML = "浏览器不支持"
+                                    }
+                                }
+                            </script>
+                            <span>{{ record.limit }}</span>
+                            &nbsp;&nbsp;&nbsp;
+                            {{ record.mood }}
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            {{ record.date }}
+                        </div>
+                    </div>
+
+
+                    <a href="/update?id={{ record.id }}"
+                       style="text-align: right;display: block;font-size: large">更改</a>
+
+                </div>
+            </div>
+            <!-- /. ROW  -->
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+<!-- JS Scripts-->
+<!-- jQuery Js -->
+<script src="/static/assets/js/jquery-1.10.2.js"></script>
+<!-- Bootstrap Js -->
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<!-- Metis Menu Js -->
+<script src="/static/assets/js/jquery.metisMenu.js"></script>
+<!-- Morris Chart Js -->
+<script src="/static/assets/js/morris/raphael-2.1.0.min.js"></script>
+<script src="/static/assets/js/morris/morris.js"></script>
+<!-- Custom Js -->
+<script src="/static/assets/js/custom-scripts.js"></script>
+
+
+</body>
+
+</html>
